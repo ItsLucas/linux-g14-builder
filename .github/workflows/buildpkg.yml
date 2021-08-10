@@ -28,7 +28,7 @@ jobs:
       - name: Build Archlinux package
   # You may pin to the exact commit or the version.
   # uses: countstarlight/arch-makepkg-action@ddb02f88bfbae49ab333140697eb17d9a4b89b2a
-        uses: ItsLucas/arch-makepkg-action@20a93b985864943f73273ad1fadaa04f4bd1f55a
+        uses: ItsLucas/arch-makepkg-action@9a1978c1be9bae6033e1f4af70899cb169018285
         with:
     # A string with a space separated list of aur packages that should be built and included in the repository.
 
