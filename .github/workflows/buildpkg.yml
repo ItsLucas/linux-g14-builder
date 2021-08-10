@@ -25,8 +25,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Arch Linux PKGBUILD builder action
-        uses: 2m/arch-pkgbuild-builder@v1.18
-        with:
-          target: 'pkgbuild'
-          pkgname: 'linux-g14'
+      - name: Archlinux MAKEPKG action
+  # You may pin to the exact commit or the version.
+  # uses: mijailr/arch-makepkg-action@16700ae56bc0b398a9da866ec884f61909a9e6b4
+        uses: mijailr/arch-makepkg-action@1.0.1
