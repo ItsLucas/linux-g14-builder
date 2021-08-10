@@ -25,11 +25,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Build Archlinux package
-  # You may pin to the exact commit or the version.
-  # uses: countstarlight/arch-makepkg-action@ddb02f88bfbae49ab333140697eb17d9a4b89b2a
-        uses: countstarlight/arch-makepkg-action@v0.0.1
+      - name: Arch Linux PKGBUILD builder action
+        uses: 2m/arch-pkgbuild-builder@v1.18
         with:
-    # A string with a space separated list of aur packages that should be built and included in the repository.
-
-          packages: "linux-g14 linux-g14-headers"
+          target: 'pkgbuild'
+          pkgname: 'linux-g14'
